@@ -1,10 +1,10 @@
 ## 개요
-JDl8에서부터 PermGen 영역은 Metaspace 영역으로 대체되었다. PermGen과 Metaspace 영역의 차이를 간략하게 알아보자.
+JDK8에서부터 PermGen 영역은 Metaspace 영역으로 대체되었다. PermGen과 Metaspace 영역의 차이를 간략하게 알아보자.
 
 ## PermGen
 **PermGen(Permanent Generation)  main heap memory에서 분리된 special한 heap영역입니다.**
 
-> 다른 문서를 찾아보면 heap 영역이 아니다라고 하는데 이는 잘못되었다. [오라클 문서](https://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-VM/html/memleaks.html)를 보면 아래와 같은 문장이 있다.
+> 다른 문서를 찾아보면 heap 영역이 아니다라고 하는데 오라클이 구현한 JVM에서는 heap영역이다. [오라클 문서](https://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-VM/html/memleaks.html)를 보면 아래와 같은 문장이 있다.
 > The permanent generation is the area of the heap where class and method objects are stored. 
 > 또한 [PerGem 영역도 GC의 대상](https://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-VM/html/tooldescr.html#gblmm)이 된다.
 
