@@ -174,6 +174,7 @@ jar 파일에 다 따로따로 존재하는것 같네요. 그럼 application을 
 org.springframework.boot.autoconfigure.EnableAutoConfiguration
 ```
 <br />
+
 ![spring.factories-8.png](/image/spring.factories-8.png)<br />
 제가 설정한 `com.navercorp.configuration.ServiceConfig`가 spring-boot-autoconfigure-2.0.0.RC2.jar에 있는 spring.factories의 설정과 함께 load된게 확인이 되었습니다.
 
