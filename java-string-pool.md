@@ -67,7 +67,7 @@ java `7u40`이전에는 1009 buckets가 default size이며 `7u40`에서 java 11�
 
 ## Java 9에서 주목할 점.
 Java 8까지 Strings는 내부적으로 문자 배열(char[])로 표시되었고, UTF-16으로 인코딩되어 모든 문자가 2바이트의 메모리를 사용했습니다.<br/>
-Java 9에서는 **Compact Strings**이라 불리는 새로운 포맷이 추가되었습니다. 이 새로운 포맷은 byte[]로 인코딩을 합니다.<br/>
+Java 9에서는 **Compact Strings**이라 불리는 새로운 포맷이 추가되었습니다. 이 새로운 포맷은 저장된 내용에 따라 char[]와 byte[] 중 적절한 인코딩을 합니다.<br/>
 Compact Strings 이후로 필요한 경우에만 UTF-16으로 인코딩하기 때문에, heap 메모리의 양은 현저히 떨어지게되고, GC의 overhead가 줄어들게 됩니다.
 
 -----
