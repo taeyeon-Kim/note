@@ -19,6 +19,8 @@ public class ByteCode {
     }
 }
 ```
+![asd](./image/TieredCompilation_1.png)
+
 JVM은 3가지로 나뉜다.
 
  [1. Class Loader SubSystem](#class-loader-subsystem)<br />
