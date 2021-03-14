@@ -6,20 +6,6 @@
 
 ## JVM Architecture Diagram
 ![JVM-architecture](./image/JVM-architecture.png)
-```java
-public class ByteCode {
-    public void executer() {
-        while (true) {
-            this.call();
-        }
-    }
-
-    public void call() {
-        System.out.println("infinite");
-    }
-}
-```
-![asd](./image/TieredCompilation_1.png)
 
 JVM은 3가지로 나뉜다.
 
